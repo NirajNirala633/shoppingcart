@@ -38,6 +38,7 @@ public class CartController {
         }
     }
 
+    // Get total amount
     @GetMapping("/{cartId}/cart/total-price")
     public ResponseEntity<ApiResponse> getTotalAmount( @PathVariable Long cartId) {
         try {
